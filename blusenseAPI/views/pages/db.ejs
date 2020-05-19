@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+  <!--  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="/socket.io/socket.io.js"></script>
+-->
+
+ <!-- <script src="/socket.io/socket.io.js"></script> 
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  -->
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+<div id =  "scroll" style = "text-align:left; display: inline-block;" >
+	<a href="#pH" style = "scroll-behavior: smooth; font-size:30px;" >pH</a>
+	<u style = "font-size:40px">|</u>
+	<a href="#TDS" style = "scroll-behavior: smooth; font-size: 30px;" >TDS</a>
+	<u style = "font-size:40px">|</u>
+	<a href="#Diso" style = "scroll-behavior: smooth;font-size:30px;" >Dissolved O2</a>
+	<u style = "font-size:40px">|</u>
+	<a href="#Conductivity" style = "scroll-behavior: smooth;font-size:30px;" >Conductivity</a>
+	<u style = "font-size:40px">|</u>
+	<a href="#Pressure" style = "scroll-behavior: smooth;font-size:30px;" >Pressure</a>
+	<u style = "font-size:40px">|</u>
+	<a href="#Temperature" style = "scroll-behavior: smooth;font-size:30px" >Temperature</a>
+</div>
+
+<div id = "pH"> 
+	<h1 style = "text-align: center;" >pH<h1>
+			<div>
+				    <a href="https://plotly.com/~mrawding1/0/?share_key=qijbHSFsqmVwiTm149vs9F" target="_blank" title="date-axes" style="display: block; text-align: center;"><img src="https://plotly.com/~mrawding1/0.png?share_key=qijbHSFsqmVwiTm149vs9F" alt="date-axes" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+				        <script data-plotly="mrawding1:0" sharekey-plotly="qijbHSFsqmVwiTm149vs9F" src="https://plotly.com/embed.js" async></script>
+			</div>
+
+
+
+</div>
+<div id = "TDS">
+	<h1 style = "text-align: center;" >  Total Dissolved Solids<h1>
+	<div>
+		    <a href="https://plotly.com/~mrawding1/4/?share_key=iE3gngXPCYzBcvFkejMVyh" target="_blank" title="tds" style="display: block; text-align: center;"><img src="https://plotly.com/~mrawding1/4.png?share_key=iE3gngXPCYzBcvFkejMVyh" alt="tds" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+		        <script data-plotly="mrawding1:4" sharekey-plotly="iE3gngXPCYzBcvFkejMVyh" src="https://plotly.com/embed.js" async></script>
+	</div>
+
+</div>
+
+
+<div id = "Diso">
+        <h1 style = "text-align: center;" >Dissolved Oxygen<h1>
+	<div>
+		    <a href="https://plotly.com/~mrawding1/6/?share_key=FwcT3tM9JVBhWTXXxhA69b" target="_blank" title="diso" style="display: block; text-align: center;"><img src="https://plotly.com/~mrawdng1/6.png?share_key=FwcT3tM9JVBhWTXXxhA69b" alt="diso" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+	     <script data-plotly="mrawding1:6" sharekey-plotly="FwcT3tM9JVBhWTXXxhA69b" src="https://plotly.com/embed.js" async></script>
+	    </div>
+
+</div>
+<div id = "Conductivity">
+	<h1 style = "text-align: center;" >Conductivity<h1>
+			<div>
+				    <a href="https://plotly.com/~mrawding1/1/?share_key=5DrlvgQ9ykDTkfMUYpfYrC" target="_blank" title="cond" style="display: block; text-align: center;"><img src="https://plotly.com/~mrawding1/1.png?share_key=5DrlvgQ9ykDTkfMUYpfYrC" alt="cond" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+				       <script data-plotly="mrawding1:1" sharekey-plotly="5DrlvgQ9ykDTkfMUYpfYrC" src="https://plotly.com/embed.js" async></script>
+			</div>
+
+
+</div>
+<div id = "Pressure">
+	<h1 style = "text-align: center;" >Pressure<h1>
+	<div>
+		    <a href="https://plotly.com/~mrawding1/10/?share_key=dUd3OEGL3W7U9XG2IIluHZ" target="_blank" title="press" style="display: block; text-align: center;"><img src="https://plotly.com/~mrawding1/10.png?share_key=dUd3OEGL3W7U9XG2IIluHZ" alt="press" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+	     <scipt data-plotly="mrawding1:10" sharekey-plotly="dUd3OEGL3W7U9XG2IIluHZ" src="https://plotly.com/embed.js" async></script>
+	</div>
+
+</div>
+
+<div id = "Temperature">
+        <h1 style = "text-align: center;" >Temperature<h1>
+	<div>
+		    <a href="https://plotly.com/~mrawding1/8/?share_ky=lxWNC5BuhxCL8IkixzmUv3" target="_blank" title="temp" style="display: block; text-align: center;"><img src="https://plotly.com/~mrawding1/8.png?share_key=lxWNC5BuhxCL8IkixzmUv3" alt="temp" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+		        <scriptdata-plotly="mrawding1:8" sharekey-plotly="lxWNC5BuhxCL8IkixzmUv3" src="https://plotly.com/embed.js" async></script>
+	</div>
+
+</div>
+				
+
+</body>
+</html>

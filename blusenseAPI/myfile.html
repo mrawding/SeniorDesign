@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <title>Node delivered HTML
+
+	</head>
+	<body>
+		   <div>
+			      	<h1>Send JSON to Node</h1>
+				        <button onClick="sendJSON()">Send</button>
+					        <p id ="result">
+						        </p>
+							   </div>
+	<script>
+		 var myData = [
+			 	{
+						    "time": "Bill",
+						    "ph": "7.5"
+						    "diso":"32.2"
+						    "depth" : "44.3"
+						    "temp" : "56"
+						    "pos" : "55433:3131"
+						}
+			     ]
+
+function sendJSON(){
+
+	var xmlhttp = new XMLHttpRequest();   // new HttpRequest instancetp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+		           document.getElementById("result").innerHTML =
+			           this.responseText;
+		        }
+	 };
+xmlhttp.open("POST", "http://localhost:5000");
+xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp.send(JSON.stringify(myData));
+
+}
+
+	</script>
+	</body>
+</html>

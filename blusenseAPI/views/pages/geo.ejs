@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ../partials/header.ejs %>
+ 	 <% include ../partials/nav.ejs %>
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+	   height: 800px;  /* The height is 400 pixels */
+	   width: 100%;  /* The width is the width of the web page */
+					             }
+  </style>
+  <script async defer
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi8Lb1l38PoE4Vfg4_emhg1qXq0P1LrBc&callback=initMap">
+	  </script
+</head>
+ <body>
+	 <h1 style = "text-align:center;padding:20px;font-color: skyblue; font-size:40px; font-family:Helvetica;">Last Known Location</h3>
+	 <div id="map"></div>
+				  
+	<script>
+		  function initMap() {
+		   
+			  var uluru = {lat: 39.692897, lng: -75.740351};
+		    
+			  var map = new google.maps.Map(
+		       
+			 document.getElementById('map'), {zoom: 4, center: uluru});
+		    
+			 var marker = new google.maps.Marker({position: uluru, map: map});
+		  }
+
+		      </script>
+		
+ </body>
+</html>
